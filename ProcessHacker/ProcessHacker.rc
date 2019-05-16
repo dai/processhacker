@@ -16,7 +16,7 @@
 // English (Australia) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+LANGUAGE LANG_JAPANESE, SUBLANG_ENGLISH_US
 #pragma code_page(1252)
 
 #ifdef APSTUDIO_INVOKED
@@ -74,20 +74,20 @@ IDI_MAGNIFIER           ICON                    "resources\\magnifier.ico"
 
 IDR_MAINWND MENU
 BEGIN
-    POPUP "&Hacker"
+    POPUP "ハック(&H)"
     BEGIN
-        MENUITEM "&Run...\aCtrl+R",             ID_HACKER_RUN
-        MENUITEM "Run as ad&ministrator...",    ID_HACKER_RUNASADMINISTRATOR
-        MENUITEM "Run as &limited user...",     ID_HACKER_RUNASLIMITEDUSER
-        MENUITEM "Run &as...\aCtrl+Shift+R",    ID_HACKER_RUNAS
-        MENUITEM "Show &details for all processes", ID_HACKER_SHOWDETAILSFORALLPROCESSES
+        MENUITEM "実行(&R)...\aCtrl+R",             ID_HACKER_RUN
+        MENUITEM "管理者権限で実行(&m)...",    ID_HACKER_RUNASADMINISTRATOR
+        MENUITEM "ゲストで実行(&l)...",     ID_HACKER_RUNASLIMITEDUSER
+        MENUITEM "開いて実行(&a)...\aCtrl+Shift+R",    ID_HACKER_RUNAS
+        MENUITEM "全プロセスの詳細を表示(&d)", ID_HACKER_SHOWDETAILSFORALLPROCESSES
         MENUITEM SEPARATOR
-        MENUITEM "&Save...\aCtrl+S",            ID_HACKER_SAVE
-        MENUITEM "&Find handles or DLLs...\aCtrl+F", ID_HACKER_FINDHANDLESORDLLS
-        MENUITEM "&Options...",                 ID_HACKER_OPTIONS
-        MENUITEM "&Plugins...",                 ID_HACKER_PLUGINS
+        MENUITEM "保存(&S)...\aCtrl+S",            ID_HACKER_SAVE
+        MENUITEM "DLL、ハンドルを検索(&F)...\aCtrl+F", ID_HACKER_FINDHANDLESORDLLS
+        MENUITEM "オプション(&O)...",                 ID_HACKER_OPTIONS
+        MENUITEM "プラグイン(&P)...",                 ID_HACKER_PLUGINS
         MENUITEM SEPARATOR
-        POPUP "&Computer"
+        POPUP "コンピューター(&C)"
         BEGIN
             MENUITEM "&Lock",                       ID_COMPUTER_LOCK
             MENUITEM "Log o&ff",                    ID_COMPUTER_LOGOFF
